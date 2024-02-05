@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="circulo"></div>
+    <img src="./imagens/logo.png" alt="logo Starbucks" class="logo">
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é apenas café, é um <span>Starbucks</span></h2>
+            <p>Starbucks é uma empresa multinacional norte-americana, com a maior cadeia de cafeterias do mundo. Tem sua
+                sede na
+                cidade de Seattle, estado de Washington.</p>
+            <button>Deixe o seu LIKE!</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="./imagens/img1.png" alt="copo Starbucks" class="Starbucks">
+        </div>
+    </div>
+    <div class="menu">
+        <img src="./imagens/img-pequena1.png" class="copo-pequeno verde">
+        <img src="./imagens/img-pequena2.png" class="copo-pequeno rose">
+        <img src="./imagens/img-pequena3.png" class="copo-pequeno rosa">
+    </div>
+</body>
+
+
+</html>
+
+<script>
+    let circulo = document.querySelector(".circulo")
+    let imgCopo = document.querySelector(".Starbucks")
+    let verde = document.querySelector(".verde")
+    let rose = document.querySelector(".rose")
+    let rosa = document.querySelector(".rosa")
+
+    rose.addEventListener("click", () => {
+        imgCopo.src = "imagens/img2.png"
+        circulo.style.background ="#eb7495" 
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "imagens/img3.png"
+        circulo.style.background ="#FF1493" 
+    })
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "imagens/img1.png"
+        circulo.style.background ="#017143" 
+    })
+
+</script>
